@@ -143,6 +143,8 @@ const handleFormSubmit = async(event) => {
 	});
 	const {state, message, data} = await response.json();
 	console.log(message);
+	
+	
 	 
 	// 重新資料渲染(fetch取資料+渲染)
 	fetchAndRenderData('/mvc/rest/user', 'user-list-body', renderUser);
